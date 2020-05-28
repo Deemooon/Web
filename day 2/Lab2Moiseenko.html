@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Задание №1 //
+
+        function pow(x, n) {
+            let result = x;
+
+            for (let i = 1; i < n; i++) {
+                result *= x;
+            }
+
+            return result;
+
+        }
+        a = prompt("Введите x");
+        b = prompt("Введите n");
+        alert(pow(a, b));
+
+
+
+        // Задание №2 //
+        console.log("Задание №2");
+
+        function compare(x) {
+            return function(y) {
+                if (y > x) return true
+                else if (y < x) return false
+                else if (y == x) return null
+                else return alert("Ошибка");
+            }
+        }
+        let comparable = compare(prompt("Введите число для сравнения"));
+        let num = prompt("Введите второе число");
+        console.log(comparable(num));
+        // Задание №3 //
+        console.log("Задание №3");
+        var str = 'строки для задания';
+
+        function ucFirst(str) {
+
+            return str.toUpperCase(str).slice(0, 1) + str.slice(1);
+
+
+        };
+        var arr = str.split(' ');
+        var newstr = '';
+        for (key in arr) {
+            newstr += ucFirst(arr[key]) + ' ';
+
+        }
+        alert(newstr);
+        // Задание №4//
+        console.log("Задание №4");
+        let book1 = {};
+        book1 = {
+            title: "Крестный отец",
+            pubYear: 1972,
+            price: "3500 тг.",
+            show: function() {
+                console.log(book1.title);
+                console.log(book1.price);
+            }
+        }
+        let book2 = {
+            title: "Метро 2035",
+            pubYear: 2015,
+            price: "3200 тг."
+        };
+
+        function showBook() {
+            console.log(book2.title);
+            console.log(book2.price);
+        }
+        book2.show = function() {
+            showBook();
+        }
+        for (var number in book1) {
+            console.log(number);
+        }
+        book1.show();
+        book2.show();
+        // Задание №5 //
+        console.log("Задание №5");
+        var a = [5, 12];
+        var b = [];
+        a[99] = 7;
+        for (var x in a) {
+            b = Math.pow(a[x], 2);
+            console.log(b);
+        }
+        for (var i = 0; a.length > i; i++) {
+            if (!isNaN(a[i])) {
+                console.log(Math.pow(a[i], 2))
+            }
+        }
+        // Задание №5(2)//
+        var a = [5, 12];
+        var b = [];
+        a[99] = 7;
+
+        var length = a.length;
+        var num1;
+
+        for (var i = 0; i < length; i++) {
+            num1 = a[i];
+
+            if (num1 != null) {
+                b.push(num1 * num1);
+            }
+        }
+        console.log(b);
+        // Задание №6 //
+        console.log("Задание 6");
+        let s = 'Мы знаем, что монохромный цвет - это градации серого';
+        let txt = 'хром';
+        let word;
+        temp = s.toUpperCase().indexOf(txt.toUpperCase());
+        let spacefound;
+        while (temp < s.length) {
+            if (s[temp] != ' ') {
+                temp++
+            }
+            if (s[temp] == ' ') {
+                spacefound = temp;
+                break;
+            }
+        }
+        let probel2 = spacefound;
+        let probel1;
+        spacefound--;
+        while (spacefound > 0) {
+            if (s[spacefound] != ' ') {
+                spacefound--;
+            }
+            if (s[spacefound] == ' ') {
+                probel1 = spacefound;
+                break;
+            }
+        }
+        tempstring = s.substring(probel1, probel2);
+        word = tempstring.slice(1);
+        console.log(word);
+
+        console.log("Задание №7");
+
+        function Book(title, pubYear, price) {
+            this.title = title;
+            this.pubYear = pubYear;
+            this.price = price;
+        }
+        let book3 = new Book("Метро 2033", 2005, 3200);
+        let book4 = new Book('Метро 2034', 2009, 3500);
+        Book.prototype.show = function() {
+            console.log(this.title);
+            console.log(this.pubYear);
+            console.log(this.price);
+        }
+        book3.show();
+        book4.show();
+    </script>
+
+</body>
+
+</html>
