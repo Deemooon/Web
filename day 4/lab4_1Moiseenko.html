@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ES6</title>
+
+</head>
+
+<body>
+    <script>
+        console.log("Задание №1");
+        let promise = new Promise((resolve, reject, ) => {
+            let random = getRandom(10);
+
+            setTimeout(() => {
+                if (random >= 1 && random <= 5)
+                    resolve('true')
+                else if (random >= 6 && random <= 10)
+                    reject('error');
+                else {
+                    console.log('Число 0 не входит в это задание')
+                }
+
+
+            }, random * 100);
+            console.log(random);
+        });
+
+        promise.then(
+            result => console.log('true'),
+            error => console.log('error')
+        );
+
+        function getRandom(number) {
+            return Math.floor(Math.random() * number);
+
+        }
+    </script>
+</body>
+
+</html>
