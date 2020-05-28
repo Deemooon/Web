@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Задание №1 //
+        let exp = 10;
+        let result = 1;
+        let i = 0;
+        while (i < exp) {
+            result = result * 2;
+            i++;
+        }
+        console.log(result);
+
+
+        // Задание №2 //
+        let count = 10;
+        let res = 1;
+        for (let i = 0; i < count; i++) {
+            res = res * 2;
+
+        }
+        console.log(res);
+
+        // Задание №3 //
+        let age = prompt("Сколько вам лет? :");
+
+        if (age >= 18 && age <= 59) {
+            console.log("Вам еще работать и работать")
+        } else if (age > 59) {
+            console.log("Вам пора на пенсию");
+        } else if (age >= 1 && age <= 17) {
+            console.log("Вам работать еще рано - учитесь")
+        } else {
+            console.log("Вы гений");
+        }
+
+        // Задание №4  ПЕРЕДЕЛАН//
+        let space = '&nbsp;';
+        for (let m = 1; m <= 9; m++) {
+            for (let i = 20 - 2 * m; i >= 1; i--) {
+                document.write(space);
+            }
+            for (let n = 1; n <= m; n++) {
+                document.write(m);
+            }
+            document.write('<br>');
+        }
+
+        // Задание №5 //
+        let num = prompt("Введите число?");
+        let result_;
+        switch (num) {
+            case '1':
+                result_ = ('Зима');
+                break;
+
+            case '2':
+                result_ = ('Весна');
+                break;
+            case '3':
+                result_ = ('Лето');
+                break;
+            case '4':
+                result_ = ('Осень');
+                break;
+        }
+        console.log(result_);
+    </script>
+
+</body>
+
+</html>
