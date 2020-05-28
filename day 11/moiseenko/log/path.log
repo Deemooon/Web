@@ -1,0 +1,8 @@
+1590127303 | index.php | /index.php
+1590127321 | index.php | /index.php?id=log
+1590127343 | index.php?id=log | /index.php
+1590127343 | index.php | /index.php?id=contact
+1590127344 | index.php?id=contact | /index.php?id=about
+1590127344 | index.php?id=about | /index.php?id=log
+1590127391 | index.php?id=about | /index.php?id=log
+1590127415 | index.php | /index.php
