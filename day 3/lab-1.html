@@ -1,0 +1,86 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Открытие новых окон и запись содержания</title>
+    <style type="text/css">
+        html {
+            background: #fff;
+            font: 16px calibri, sans-serif;
+            cursor: default;
+        }
+        
+        p {
+            float: left;
+            margin: 0 8px 0 0;
+            padding: 20px;
+        }
+        
+        .p1 {
+            background: #ccf;
+        }
+        
+        .p2 {
+            background: #fcc;
+        }
+        
+        .p3 {
+            background: #cfc;
+        }
+    </style>
+    <script type="text/javascript">
+        name = 'Это я его открыло!';
+        let myWin; /* НОВОЕ ОКНО! */
+
+        function winOpen() {
+            let width = 300;
+            let height = 200;
+            let left = (screen.availWidth - width) / 2;
+            let top = (screen.availHeight - height) / 2;
+            let padding = "width=" + width + ",height=" + height + ",top=" + top + ",left=" + left;
+
+            myWin = window.open("", "", padding);
+            myWin.focus();
+
+        }
+
+        function docWrite() {
+
+            let word = "";
+            word += "<html>";
+            word += "<head>";
+            word += "<title>Lol</title>";
+            word += "<style>html{background:#369;color:#fff;font:16px calibri, sans-serif;}</style>"
+            word += "<script>";
+            word += "alert(opener.name)";
+            word += "<\/script>";
+            word += "</head>";
+
+            word += "<body>";
+            word += "<p>Текст параграфа</p>";
+            word += "</body>";
+
+            word += "</html>";
+
+            myWin.document.open();
+            myWin.document.write(word);
+            myWin.document.close();
+        }
+
+        function winClose() {
+            if (myWin && !myWin.close()) {
+                myWin.focus();
+                myWin.close();
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p class="p1"><a href="javascript:winOpen();">Открыть окно</a></p>
+    <p class="p3"><a href="javascript:docWrite();">Заполнить окно</a></p>
+    <p class="p2"><a href="javascript:winClose();">Закрыть окно</a></p>
+</body>
+
+</html>
