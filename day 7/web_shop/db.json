@@ -1,0 +1,124 @@
+{
+  "products": [
+    {
+      "image": "1.png",
+      "name": "Backwoods Original",
+      "price": 800,
+      "article": "B1",
+      "available": true,
+      "category": "Мужские"
+    },
+    {
+      "image": "2.png",
+      "name": "Backwoods Honey",
+      "price": 800,
+      "article": "B2",
+      "available": true,
+      "category": "Женские"
+    },
+    {
+      "image": "3.png",
+      "name": "Backwoods Honey Berry",
+      "price": 800,
+      "article": "B3",
+      "available": false,
+      "category": "Женские"
+    },
+    {
+      "image": "4.png",
+      "name": "Backwoods Purple",
+      "price": 1000,
+      "article": "B4",
+      "available": true,
+      "category": "Мужские"
+    },
+    {
+      "image": "5.png",
+      "name": "Honey Berry USA",
+     "price": 1100,
+      "article": "B5",
+      "available": false,
+      "category": "Женские"
+    },
+    {
+      "image": "6.png",
+      "name": "Backwoods Grape",
+      "price": 900,
+      "article": "B6",
+      "available": true,
+      "category": "Женские"
+    },
+    {
+      "image": "7.png",
+      "name": "Backwoods Blue",
+      "price": 1000,
+      "article": "B7",
+      "available": false,
+      "category": "Женские"
+    },
+    {
+      "image": "8.png",
+      "name": "Backwoods Vanilla",
+      "price": 1000,
+      "article": "B8",
+      "available": false,
+      "category": "Женские"
+    },
+    {
+      "image": "9.png",
+      "name": "Backwoods Authentic",
+      "price": 800,
+      "article": "B9",
+      "available": false,
+      "category": "Женские"
+    },
+    {
+      "image": "10.png",
+      "name": "Backwoods Aromatic",
+      "price": 800,
+      "article": "B10",
+      "available": false,
+      "category": "Женские"
+    },
+    {
+      "image": "11.png",
+      "name": "Backwoods Black and Sweet Aromatic",
+      "price": 1000,
+      "article": "B11",
+      "available": false,
+      "category": "Женские"
+    },
+    {
+      "image": "12.png",
+      "name": "Backwoods CarIbe",
+      "price": 800,
+      "article": "B12",
+      "available": false,
+      "category": "Женские"
+    },
+    {
+      "image": "13.png",
+      "name": "Lighter BIC China",
+      "price": 150,
+      "article": "B13",
+      "available": false,
+      "category": "Женские"
+    },
+    {
+      "image": "14.png",
+      "name": "BIC Backpack",
+      "price": 3000,
+      "article": "B14",
+      "available": false,
+      "category": "Женские"
+    },
+    {
+      "image": "15.png",
+      "name": "T-S Backwoods",
+      "price": 2000,
+      "article": "B15",
+      "available": false,
+      "category": "Женские"
+    }
+  ]
+}
